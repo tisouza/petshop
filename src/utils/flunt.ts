@@ -17,6 +17,10 @@ export class Flunt {
     if (value.length != len) this.errors.push(message);
   }
 
+  isGreaterThan = (valueA, valueB, message) =>{
+    if (valueA > valueB) this.errors.push(message);
+  }
+
   isEmail = (value, message) => {
     const reg = new RegExp(/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/);
     if (!reg.test(value)) this.errors.push(message);

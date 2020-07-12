@@ -1,8 +1,8 @@
 import { Contract } from '../contract';
 import { Flunt } from 'src/utils/flunt';
 import { Injectable } from '@nestjs/common';
-import { Pet } from 'src/backoffice/models/pet.model';
- 
+import { Pet } from 'src/modules/backoffice/models/pet.model';
+  
 @Injectable()
 export class CreatePetContract implements Contract{
     errors:any[];
